@@ -1,0 +1,41 @@
+/**app.wxss**/
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.dv_bt_buttoncommit {
+  margin-top: 10px;
+  width: 80%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  background: #DBA875;
+  border-radius: 5px;
+}
+
+.dv_bt_buttoncommit:active {
+  background: #DBA875;
+  opacity: 0.8;
+}
+.horizontalDirection {
+  display: flex;
+  flex-direction: row;
+}
+.h_center{
+ align-items: center;
+}
+.v_center{
+ align-self: center;
+}

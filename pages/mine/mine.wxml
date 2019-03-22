@@ -1,0 +1,87 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{!hasUserInfo && canIUse}}">
+    <view class='center' style='margin-top:40px;'>
+      <label style='font-size:24px'>微信一键登录</label>
+    </view>
+    <view class='center'>
+      <label style='font-size:16px;margin-top:5px'>登录可查看积分，会员，钱包等</label>
+
+    </view>
+    <view class='center' style='margin-top:40px;'>
+      <button class='dv_bt_buttoncommit' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信登录 </button>
+    </view>
+  </view>
+
+  <view wx:else class="userinfo">
+    <view class='mine-head'>
+      <view class='horizontalDirection h_center' style='padding:20rpx;'>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+
+        <view style='margin-left:10px'>
+          <view>
+            <label style='font-size:18px;color:#333'>{{userInfo.nickName}}</label>
+          </view>
+          <view class='leve' style='margin-top:10px;'>
+            <label>{{level}}</label>
+          </view>
+        </view>
+
+
+        <view class='right'>
+          <view style='text-align:right'>
+            <label style='font-size:20px;color:#333;font-weight:bold; '>GO会员</label>
+          </view>
+          <view class='leve2' style='margin-top:10px;'>
+            <label>开通星球会员></label>
+          </view>
+
+        </view>
+
+      </view>
+      <view>
+        <view style='height:36rpx;margin-top:10px'>
+          <view class='sub'>
+            <view class='leve3'>
+              <label>未开通</label>
+            </view>
+          </view>
+
+        </view>
+
+        <view class='space-around '>
+          <view wx:for-items="{{listmiddle}}" wx:key="index">
+            <view style='text-align:center'>
+              <label  style="font-size:14px;color:#333;font-weight:bold;display:{{index !== 2 ? 'none' : 'inline'}}">￥</label>
+            
+              <label style='font-size:20px;color:#333;font-weight:bold;'>{{item.value}}</label>
+            </view>
+            <view style='text-align:center'>
+              <label style='font-size:16px;color:#333;margin-top:20px;'>{{item.title}}</label>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='space-around' style='margin-top:20px'>
+      <view wx:for-items="{{listfun}}" wx:key="index">
+        <view style='text-align:center'>
+          <image class="userinfo-fun-icon" src='{{item.image}}' mode="cover"></image>
+        </view>
+        <view style='text-align:center'>
+          <label style='font-size:16px;color:#333;margin-top:20px;'>{{item.title}}
+          </label>
+        </view>
+      </view>
+    </view>
+
+
+
+
+    <!-- <view class="usermotto">
+      <text class="user-motto">{{motto}}</text>
+    </view> -->
+  </view>
+
+</view>
