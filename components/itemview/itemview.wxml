@@ -1,0 +1,18 @@
+<!--view/itemView/ItemView.wxml-->
+
+ 
+   
+  <view class='itemview-view'>
+      <navigator class=' itemview-navigator  horizontalDirection' url="{{url?url:' '}}" hover-class="navigator-hover">
+ <image class="icon"  src='{{icon}}' mode="cover"></image>
+     <view style="color: {{titleColor?titleColor:'#333'}};font-size: 16px;margin-left:10px">
+      <label>{{title}}</label>
+    </view>
+  <view class ='right' style="color: {{descColor?descColor:'#999'}};font-size: 14px;">
+      <label>{{desc}}</label>
+    </view>
+
+     </navigator>
+  </view>
+
+

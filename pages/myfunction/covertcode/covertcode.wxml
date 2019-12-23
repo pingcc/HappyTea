@@ -1,0 +1,33 @@
+<!--pages/myfunction/covertcode/covert.wxml-->
+<!--pages/myfunction/membercode/membercode.wxml-->
+<view class="container" style='background-color:white'>
+
+  <view class='img'>
+  </view>
+  <view class='text'>
+    <label style='font-size:14px;color:#333'>查看兑换规则</label>
+  </view>
+  <view>
+    <input class='input' bindinput="inputValue"
+    placeholder="请输入兑换码" />
+
+    <button style='margin-top:20px;' 
+    class='dv_bt_buttoncommit' bindtap="commit">
+      兑换</button>
+
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

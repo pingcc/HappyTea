@@ -1,0 +1,319 @@
+/* pages/list/list.wxss */
+
+.page {
+  overflow-y: hidden;
+}
+
+.list-left-menu {
+  width: 25%;
+  background-color: #fafafa;
+}
+
+.list-left-menu-box-unselect {
+  border-bottom: 1px solid #e3e3e3;
+  height: 120rpx;
+  color: #6c6c6c;
+  background: #f9f9f9;
+}
+
+.list-left-menu-box-selected {
+  height: 120rpx;
+  color: #ff9c35;
+  border-left: 3px solid #ff9c35;
+  background: white;
+}
+
+.list-tab {
+  font-size: 25rpx;
+  background: #fafafa;
+  color: #333;
+  padding: 10rpx;
+}
+
+/* 让其子元素居中 */
+
+.center {
+  height: 120rpx;
+  width: 25%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.btn-label {
+  position: absolute;
+  width: 60rpx;
+  height: 32rpx;
+  border-radius: 80rpx 0 0 80rpx;
+  left: 70%;
+  border: solid ;
+  letter-spacing: 2rpx;
+  top:0;
+  text-align: center;
+  line-height: 32rpx;
+  font-size: 16rpx;
+  color: white;
+  background-color: #f46667;
+}
+
+.list-menu-name {
+  /* 设置间距 */
+  line-height: 36rpx;
+  font-size: 28rpx;
+  padding: 20rpx;
+}
+
+.list-right-menu {
+  width: 75%;
+  background-color: white;
+}
+
+.list-image-box {
+  width: 160rpx;
+  height: 144rpx;
+  text-align: center;
+  position: relative;
+}
+
+.btn-add {
+  position: absolute;
+  left: 480rpx;
+  top: 35%;
+}
+
+.content-list {
+  display: flex;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.list-image {
+  width: 108rpx;
+  margin-top: 16rpx;
+}
+
+.issue-name {
+  width: 200px;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.plus-icon {
+  float: right;
+  color: #ff9c35;
+  font-size: 46rpx;
+}
+
+.operate-bar {
+position: fixed;
+  bottom: 0px;
+  height: 110rpx;
+  width: 100%;
+  display: flex;
+   z-index: 1001;
+}
+
+.gouwuche {
+  width: 75%;
+  background: #353535;
+  height: 100%;
+}
+
+.gouwuche-icon {
+  font-size: 40px;
+  color: #87888e;
+  margin-left: 10px;
+  position: relative;
+}
+
+.number-msg {
+  padding: 1px 7px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  right: -5px;
+}
+
+.gouwuche-price {
+  color: #a9a9a9;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.submit-btn {
+  height: 100%;
+  background: #f7f7f7;
+  width: 25%;
+  display: flex;
+}
+
+.submit-btn-label {
+  color: #a9a9a9;
+  font-size: 15px;
+  margin: auto;
+}
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.7;
+  overflow: hidden;
+}
+
+
+.drawer_box_ad {
+  margin-left: 7%;
+  width: 86%;
+  overflow: hidden;
+  position: fixed;
+  top: 15%;
+  z-index: 1001;
+  background: #fff;
+  border-radius: 4px;
+}
+
+
+
+.drawer_content_ad {
+  height: 289px;
+  width: 100%;
+  padding: 10px;
+}
+
+.select-line-nav {
+  font-size: 12px;
+  margin-left: 5px;
+  margin-top: 10px;
+  color: #ababab;
+}
+
+.select-tab {
+  padding: 5px 7px;
+  border: 1px solid #ababab;
+  font-size: 12px;
+  border-radius: 5px;
+  margin: 5px;
+  color: #ababab;
+  z-index: 1002;
+}
+
+.select-active {
+  color: #ff9c35;
+  border: 1px solid #ff9c35;
+}
+
+.select-price {
+  font-size: 14px;
+  color: #ff9c35;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.btn-putIn {
+  height: 40px;
+  width: 100px;
+  font-size: 14px;
+  background: #ff9c35;
+  color: white;
+  margin-right: 20px;
+}
+
+.activity-color {
+  color: #ff9c35;
+}
+
+.color-white {
+  color: white;
+}
+
+.activity-color-bg {
+  background: #ff9c35;
+}
+
+.label-cart-bar {
+  color: #878787;
+  font-size: 12px;
+  border-left: 4px solid #ff9c35;
+  margin-left: 15px;
+}
+.label-clear{
+    color:#878787;
+    font-size: 12px;
+}
+.icon-clear {
+   margin-left: auto;
+    margin-right: 10px;
+}
+
+.cartlist-float{  
+  width: 100%; 
+  overflow: hidden;  
+  position: fixed;   
+  z-index: 1001;
+  bottom: 110rpx;
+  max-height: 280px;  
+} 
+
+.label-item{
+  color:#333;
+  font-size: 16px;
+
+}
+
+
+.cart-list-box {
+  background: #fff;
+  display: flex;
+  font-size: 13px;
+  height: 50px;
+  padding: 0 15px 0 15px;
+  align-items: center;
+}
+
+.list-info {
+  width: 50%;
+  height: 30px;
+}
+
+.list-info-size {
+  font-size: 10px;
+  color: #b1b1b1;
+}
+
+.icon-li-circle {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.font20 {
+  font-size: 20px;
+}
+
+.cart-scroll-list {
+  height: 250px;
+}
+
+.cut-bar {
+  position: fixed;
+  height: 80rpx;
+  bottom: 0rpx;
+  background: #413C3B;
+  width: 100%;
+  color: #fafafafa;
+  font-size: 14px;
+   line-height: 80rpx;
+  text-align: center;
+}

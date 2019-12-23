@@ -1,0 +1,24 @@
+/* pages/myfunction/covertcode/covert.wxss */
+.img{
+  width: 150rpx;
+  height: 150rpx;
+  background-color: black;
+  margin: 100rpx  auto 0;
+
+}
+.text{
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+ justify-content: center;
+}
+
+.input{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin: 20px 15px;
+
+}

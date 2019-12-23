@@ -14,12 +14,7 @@
   background: #f8f8f8;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx,10rpx,20rpx,10rpx;
-  border-radius: 50%;
-}
+
 .userinfo-fun-icon {
   width: 80rpx;
   height: 80rpx;
@@ -72,9 +67,6 @@
   margin-right: 10px;
 }
 
-.right {
-  margin-left: auto;
-}
 
 .space-around {
   justify-content: space-around;

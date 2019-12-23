@@ -1,15 +1,20 @@
 {
-  "pages":[
-    "pages/mine/mine",
-      "pages/ponitorder/ponitorder",
-      "pages/takeorder/takeorder",
-    "pages/logs/logs"
+  "pages": [
+    "pages/tab/mine/mine",
+    "pages/tab/ponitorder/ponitorder",
+    "pages/tab/takeorder/takeorder",
+    "pages/logs/logs",
+    "pages/myfunction/membercode/membercode",
+    "pages/myfunction/selfinfo/selfinfo",
+    "pages/myfunction/covertcode/covertcode",
+    "pages/myfunction/msgcenter/msgcenter",
+    "pages/benefit/happyteaticket/happyteaticket"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#F8F8F8",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "white",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#8a8a8a",
@@ -19,19 +24,19 @@
       {
         "selectedIconPath": "images/ic_jiubei_select.png",
         "iconPath": "images/ic_jiubei.png",
-        "pagePath": "pages/ponitorder/ponitorder",
+        "pagePath": "pages/tab/ponitorder/ponitorder",
         "text": "点单"
       },
       {
         "selectedIconPath": "images/ic_dingdan_select.png",
         "iconPath": "images/ic_dingdan.png",
-        "pagePath": "pages/takeorder/takeorder",
+        "pagePath": "pages/tab/takeorder/takeorder",
         "text": "取单"
       },
       {
         "selectedIconPath": "images/ic_mine_select.png",
         "iconPath": "images/ic_mine.png",
-        "pagePath": "pages/mine/mine",
+        "pagePath": "pages/tab/mine/mine",
         "text": "我的"
       }
     ]

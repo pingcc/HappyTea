@@ -1,0 +1,27 @@
+/* pages/myfunction/membercode/membercode.wxss */
+
+.head {
+  width: 100%;
+  height: 20%;
+  background: #fafafa;
+}
+
+.content {
+  width: 100%;
+  height: 80%;
+  background: white;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.float {
+  position: fixed;
+  margin-top: -64rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

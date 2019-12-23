@@ -1,0 +1,28 @@
+/* view/itemView/ItemView.wxss */
+
+.itemview-view {
+  width: 100%;
+  /* background: url(https://cdn.it120.cc/images/weappshop/arrow-right.png) no-repeat 700rpx center; */
+  background-size: 16rpx auto, 750rpx auto;
+  border-bottom: 1px solid #eee;
+}
+
+.itemview-navigator {
+  padding: 0 15rpx 0 15rpx;
+    height: 100rpx;
+
+}
+
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.horizontalDirection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.right {
+  margin-left: auto;
+}

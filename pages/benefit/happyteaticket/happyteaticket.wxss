@@ -1,0 +1,21 @@
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  line-height:80rpx;
+  background-color: white
+}
+.space-around {
+  justify-content: space-around;
+  flex-direction: row;
+  display: flex;
+}
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 15%;
+  color: #8a8a8a;
+}
+.on {
+  color: #2c2c2c;
+  border-bottom: 5rpx solid #2c2c2c;
+}

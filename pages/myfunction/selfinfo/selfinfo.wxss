@@ -1,0 +1,34 @@
+/* pages/myfunction/selfinfo/selfinfo.wxss */
+
+.head {
+  width: 100%;
+  height: 270rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.item {
+  background-color: white;
+  width: 100%;
+}
+
+.item-child {
+  padding: 0 10px 0;
+  height: 90rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.bt{
+   height: 60rpx;
+   font-size: 14px;
+   text-align: center;
+   margin-left:20px;
+}
+

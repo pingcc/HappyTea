@@ -1,0 +1,36 @@
+<!--pages/myfunction/selfinfo/selfinfo.wxml-->
+<view class="container">
+  <view class='head'>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view style='margin-top:10px;'>
+      <label style='font-size:18px;color:#333'>{{userInfo.nickName}}</label>
+    </view>
+  </view>
+
+  <view class='item' style='margin-top:10px;'>
+    <view class='item-child' style='font-size:14px;color:#333'>
+      <label>昵称</label>
+      <label style='margin-left:20px'>{{userInfo.nickName}}</label>
+    </view>
+    <view class='item-child' style='font-size:14px;color:#333'>
+      <label>手机号</label>
+      <label style='margin-left:20px'>{{phoneNumber}}</label>
+      <button class='bt' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">更换手机号</button>
+    </view>
+    <view class='item-child' style='font-size:14px;color:#333'>
+      <label>性别</label>
+      <radio-group  class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{sexItems}}">
+          <radio value="{{item.name}}" style='margin-left:20px'color='#333' checked="{{item.checked}}" /> {{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <view class='item-child' style='font-size:14px;color:#333'>
+      <label>生日</label>
+      <label style="color:{{birthdayDate==null||birthdayDate==''?'#999':'#333'}};font-szie:14px;margin-left:20px">{{birthdayDate==null||birthdayDate==''?'请输入生日信息，保存后不可修改':birthdayDate}}</label>
+    </view>
+  </view>
+
+  <button style='margin-top:20px;' class='dv_bt_buttoncommit' bindtap="save">保存</button>
+
+</view>

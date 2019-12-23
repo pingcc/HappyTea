@@ -1,0 +1,27 @@
+/* pages/myfunction/msgcenter/msgcenter.wxss */
+
+.empty {
+  display: flex;
+   width: 100%;
+   height: 100%;
+     flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-empty {
+  background: yellow;
+  width: 120px;
+  height: 120px;
+}
+
+.item{
+  height: 70px;
+  width: 100%;
+  padding: 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #e3e3e3;
+
+}

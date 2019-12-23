@@ -1,0 +1,22 @@
+<!--pages/benefit/happyteaticket/happyteaticket.wxml-->
+<view class="swiper-tab space-around">
+
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">可使用</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">已使用</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">已失效</view>
+</view>
+
+<swiper  bindchange="bindChange" style="height:100%;">
+  <block>
+    <swiper-item style='background:red'>
+    </swiper-item>
+  </block>
+  <block>
+    <swiper-item style='background:yellow'>
+    </swiper-item>
+  </block>
+  <block>
+    <swiper-item style='background:black'>
+    </swiper-item>
+  </block>
+</swiper>

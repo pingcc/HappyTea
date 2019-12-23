@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "喜茶GO",
+"usingComponents": {
+  "dialog": "/components/selectdialog/selectdialog"
+}
+}

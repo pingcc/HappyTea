@@ -1,0 +1,21 @@
+<!--pages/myfunction/msgcenter/msgcenter.wxml-->
+
+<view class='container column-center ' wx:if="{{listData.length==0}}">
+  <view class='view-empty'>
+  </view>
+
+  <label style='color:#333;font-size:14px;margin-top:15px'>消息类表为空</label>
+
+</view>
+
+<view class='container' wx:else>
+  <view wx:for-items="{{listData}}" wx:key="index">
+
+    <view class='item'>
+      <label style='color:#333;font-size:14px;'>{{item.title}}</label>
+      <label style='color:#666;font-size:12px;margin-top: 5px;'> {{item.content}}</label>
+    </view>
+
+  </view>
+
+</view>

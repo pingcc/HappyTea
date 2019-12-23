@@ -1,0 +1,17 @@
+<view class='container horizontalDirection'>
+
+  <scroll-view class="list-left-menu" scroll-y="true" style='height:1000rpx;'>
+    <view>
+  
+      <view  wx:for="{{listData}}" wx:key="unique" id=' left{{index}} '>
+        <view class="content" style='height:80rpx '>{{item.name}}</view>
+      </view>
+
+
+      
+    </view>
+  </scroll-view>
+
+ 
+
+</view>
